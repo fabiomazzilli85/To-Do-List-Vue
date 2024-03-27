@@ -15,6 +15,7 @@
             <ul>
                 <li v-for="(item, index) in todos" :key="index" :class="{ 'done': item.done }">
                     {{ item.text }}
+                    <button class="delete-icon" @click="removeItem(index)">x</button>
                 </li>
             </ul>
         </div>
