@@ -18,6 +18,9 @@
                     <button class="delete-icon" @click="removeItem(index)">x</button>
                 </li>
             </ul>
+
+            <input class="add-activity" type="text" v-model="newTodo" placeholder="Inserisci una nuova attività">
+            <button class="activityplus" @click="addTodo">+</button>
         </div>
     
     </div>
