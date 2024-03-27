@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>To Do List</title>
 </head>
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <header class="page-header">
+        <h1>To Do List</h1>
+    </header>
     
     <div class="container">
         
@@ -19,7 +25,7 @@
                 </li>
             </ul>
 
-            <input class="add-activity" type="text" v-model="newTodo" placeholder="Inserisci una nuova attività" @keydown.enter="addTodo">
+            <input class="add-activity" type="text" v-model="newTodo" placeholder="Inserisci una nuova attività..." @keydown.enter="addTodo">
             <button class="activityplus" @click="addTodo">+</button>
         </div>
     

@@ -6,6 +6,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #BBE2EC;
 }
 
 ul, li {
@@ -17,39 +19,48 @@ ul, li {
     margin: 0 auto;
 }
 
+.page-header {
+    background-color: #1B3C73;
+    color: white;
+    padding: 15px 25px;
+    margin-bottom: 50px;
+    font-family: "Dosis", sans-serif;
+}
+
 .done {
     text-decoration: line-through;
 }
 
 .delete-icon {
-    background-color: red;
+    background-color: #D04848;
     color: white;
-    padding: 6px 10px;
+    padding: 4px 7px;
     border: none;
     border-radius: 5px;
     margin-left: 20px;
 }
 
 .add-activity {
-    background-color: brown;
-    color: white;
+    background-color: white;
     width: 300px;
     line-height: 25px;
     margin-top: 25px;
+    border: none;
+    border-radius: 5px;
 }
 
 .activityplus {
-    background-color: yellow;
-    padding: 6px 10px;
+    background-color: #1B3C73;
+    color: white;
+    padding: 4px 7px;
     border: none;
     border-radius: 5px;
     margin-left: 20px;
 }
 
 ::placeholder {
-    color: white;
+    color: #a4a09a;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 13px;
+    padding-left: 10px;
 }
