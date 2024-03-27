@@ -11,5 +11,10 @@ createApp({
         { text: 'Studiare gli appunti su Vue.JS in vista della riunione', done: true }
       ]
     };
+  },
+  methods: {
+    removeItem(index) {
+      this.todos.splice(index, 1);
+    }
   }
 }).mount('#app');
