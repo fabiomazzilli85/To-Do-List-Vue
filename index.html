@@ -19,7 +19,7 @@
                 </li>
             </ul>
 
-            <input class="add-activity" type="text" v-model="newTodo" placeholder="Inserisci una nuova attività">
+            <input class="add-activity" type="text" v-model="newTodo" placeholder="Inserisci una nuova attività" @keydown.enter="addTodo">
             <button class="activityplus" @click="addTodo">+</button>
         </div>
     
