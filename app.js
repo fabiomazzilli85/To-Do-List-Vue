@@ -13,6 +13,12 @@ createApp({
     };
   },
   methods: {
+    addTodo() {
+      if (this.newTodo.trim() !== '') { // IF il nuovo contenuto non contiene spazi
+        this.todos.push({ text: this.newTodo, done: false }); // Viene pushato nella newTodo (v-model HTML) e la done è ovviamente False. 
+        this.newTodo = '';  // Pulisco il campo di ricerca
+      }
+    },
     removeItem(index) {
       this.todos.splice(index, 1);
     }
