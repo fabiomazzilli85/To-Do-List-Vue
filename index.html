@@ -13,10 +13,10 @@
         
         <div id="app">
             <ul>
-                <li v-for="(item, index) in todos" :key="index">
-                  {{ item.text }} - {{ item.done }}
+                <li v-for="(item, index) in todos" :key="index" :class="{ 'done': item.done }">
+                    {{ item.text }}
                 </li>
-              </ul>
+            </ul>
         </div>
     
     </div>
